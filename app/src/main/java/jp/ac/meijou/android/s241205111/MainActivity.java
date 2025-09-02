@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         prefDataStore = PrefDataStore.getInstance(this);
-
         binding.button.setOnClickListener(view -> {
             var Haruya0329 = binding.edittext.getText().toString();
             binding.Haruya0329.setText(Haruya0329);
@@ -56,6 +55,12 @@ public class MainActivity extends AppCompatActivity {
             var Haruya0329=binding.edittext.getText().toString();
             prefDataStore.setString("text",Haruya0329);
         });
+
+    }
+    protected void onStart() {
+        super.onStart();
+        prefDataStore.getString("text")
+                .ifPresent(text -> binding.Haruya0329.setText(text));
     }
 
 }
