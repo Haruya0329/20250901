@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Haruya0329</string>
+    <string name="app_name">AndroidApp</string>
+    <string name="text">Haruya</string>
+    <string name="name">TanakaHaruya</string>
 </resources>
