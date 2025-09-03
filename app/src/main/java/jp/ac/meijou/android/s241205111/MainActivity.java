@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
         prefDataStore = PrefDataStore.getInstance(this);
         binding.button.setOnClickListener(view -> {
             var Haruya0329 = binding.edittext.getText().toString();
